@@ -1,0 +1,8 @@
+apiVersion: v2
+name: conductorworkerdemo
+description: conductor worker impl. 
+
+type: application
+
+version: 2.6.68
+appVersion: "3.3.48"

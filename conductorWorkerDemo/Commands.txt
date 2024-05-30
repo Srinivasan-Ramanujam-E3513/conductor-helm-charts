@@ -1,0 +1,7 @@
+To build the jar using podman:
+
+podman build --platform="linux/amd64" . --tag conductor:conductordemo-1.0.7
+podman push conductor:conductordemo-1.0.8 vasanr55/repo-srini:conductordemo-1.0.8
+ 
+ 
+ helm install <chart-name> <path to the helm charts> -n conductor --set imageCredentials.password=<dockerhub_password>

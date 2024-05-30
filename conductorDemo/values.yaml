@@ -1,0 +1,27 @@
+replicaCount: 1
+
+service:
+  port: 8085
+  
+labels: 
+  app: demo
+
+image:
+  repository: vasanr55/repo-srini
+  tag: conductordemo-1.0.7
+  pullPolicy: Always
+  livenessPort: 8085
+
+resources: 
+  limits:
+    cpu: "1"
+    memory: 700Mi
+  requests:
+    cpu: 250m
+    memory: 200Mi
+
+imageCredentials:
+  registry: https://index.docker.io/v1/
+  username: vasanr55
+  password: <YOUR SECRET>
+  email: xyz@orkes.io

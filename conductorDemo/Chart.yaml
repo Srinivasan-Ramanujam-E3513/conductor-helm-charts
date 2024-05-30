@@ -1,0 +1,8 @@
+apiVersion: v2
+name: conductordemo
+description: Initiator of the conductor workflow. 
+
+type: application
+
+version: 2.6.68
+appVersion: "3.3.48"
